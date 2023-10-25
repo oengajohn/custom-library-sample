@@ -1,7 +1,11 @@
 package io.github.oengajohn;
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+public class Calculator {
+    public int sum(int a, int b, int... numbers) {
+        int sum = a + b;
+        for (var i : numbers) {
+            sum += i;
+        }
+        return sum;
     }
 }
